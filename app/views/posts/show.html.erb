@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <%= @post.title %>
+</h1>
+<h5>by <%= @post.user.username %></h5>
+
+
+<div class = "well" >
+	<p>
+	  <%= @post.blog_entry %>
+	</p>
+</div>
+
+<%= link_to 'Edit', edit_post_path(@post), class: "btn btn-primary" %> |
+<%= link_to 'Back', posts_path, class: "btn btn-success" %>
